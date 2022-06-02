@@ -1,0 +1,193 @@
+2022-06-02 02:11:59.627 +03:00 [INF] Entity Framework Core 5.0.5 initialized 'Electronic_departmentDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-06-02 02:12:02.399 +03:00 [INF] Executed DbCommand (234ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2022-06-02 02:12:02.888 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Electronic_department" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Electronic_department" PRIMARY KEY,
+    "UserId" TEXT NOT NULL,
+    "Title" TEXT NULL,
+    "Details" TEXT NULL,
+    "CreationDate" TEXT NOT NULL,
+    "EditDate" TEXT NULL
+);
+2022-06-02 02:12:02.890 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Electronic_department_Id" ON "Electronic_department" ("Id");
+2022-06-02 02:12:04.197 +03:00 [INF] User profile is available. Using 'C:\Users\Lemon\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-02 02:12:04.333 +03:00 [INF] Creating key {90611a0e-4aaa-4643-8d1d-68608f476d40} with creation date 2022-06-01 23:12:04Z, activation date 2022-06-01 23:12:04Z, and expiration date 2022-08-30 23:12:04Z.
+2022-06-02 02:12:04.710 +03:00 [INF] Writing data to file 'C:\Users\Lemon\AppData\Local\ASP.NET\DataProtection-Keys\key-90611a0e-4aaa-4643-8d1d-68608f476d40.xml'.
+2022-06-02 02:12:07.884 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-02 02:12:07.884 +03:00 [INF] Hosting environment: Development
+2022-06-02 02:12:07.884 +03:00 [INF] Content root path: C:\Users\Lemon\source\repos\Electronic_department4\Electronic_department.WebApi
+2022-06-02 02:12:08.406 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/ - -
+2022-06-02 02:12:08.876 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html - -
+2022-06-02 02:12:09.054 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/ - - - 301 - - 651.5956ms
+2022-06-02 02:12:10.434 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html - - - 200 - text/html;charset=utf-8 1557.4791ms
+2022-06-02 02:12:10.481 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui-bundle.js - -
+2022-06-02 02:12:10.492 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui-standalone-preset.js - -
+2022-06-02 02:12:10.492 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-06-02 02:12:10.492 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2022-06-02 02:12:10.530 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 7.5060ms
+2022-06-02 02:12:10.531 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui.css - -
+2022-06-02 02:12:10.644 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-02 02:12:10.650 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui.css - - - 200 143410 text/css 118.8833ms
+2022-06-02 02:12:10.663 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-06-02 02:12:10.691 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui-standalone-preset.js - - - 200 336841 application/javascript 196.0265ms
+2022-06-02 02:12:10.826 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-06-02 02:12:10.915 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 422.8794ms
+2022-06-02 02:12:10.944 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui-bundle.js - - - 200 1097461 application/javascript 462.9459ms
+2022-06-02 02:12:11.678 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-06-02 02:12:12.016 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 338.1645ms
+2022-06-02 02:12:12.851 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/favicon-32x32.png - -
+2022-06-02 02:12:12.852 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-06-02 02:12:12.852 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/favicon-32x32.png - - - 200 628 image/png 1.3574ms
+2022-06-02 02:42:23.169 +03:00 [INF] Entity Framework Core 5.0.5 initialized 'Electronic_departmentDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-06-02 02:42:24.107 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-06-02 02:42:24.226 +03:00 [INF] User profile is available. Using 'C:\Users\Lemon\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-02 02:42:24.887 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-02 02:42:24.887 +03:00 [INF] Hosting environment: Development
+2022-06-02 02:42:24.887 +03:00 [INF] Content root path: C:\Users\Lemon\source\repos\Electronic_department4\Electronic_department.WebApi
+2022-06-02 02:42:24.959 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/ - -
+2022-06-02 02:42:25.135 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html - -
+2022-06-02 02:42:25.142 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/ - - - 301 - - 190.3043ms
+2022-06-02 02:42:25.616 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html - - - 200 - text/html;charset=utf-8 480.7591ms
+2022-06-02 02:42:25.625 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui-bundle.js - -
+2022-06-02 02:42:25.625 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui.css - -
+2022-06-02 02:42:25.631 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui-standalone-preset.js - -
+2022-06-02 02:42:25.632 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-06-02 02:42:25.663 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 11.7471ms
+2022-06-02 02:42:25.664 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2022-06-02 02:42:25.744 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-06-02 02:42:25.744 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-02 02:42:25.748 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-06-02 02:42:25.770 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui.css - - - 200 143410 text/css 145.3873ms
+2022-06-02 02:42:25.789 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui-standalone-preset.js - - - 200 336841 application/javascript 158.2849ms
+2022-06-02 02:42:25.928 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui-bundle.js - - - 200 1097461 application/javascript 302.9444ms
+2022-06-02 02:42:25.940 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 276.3399ms
+2022-06-02 02:42:26.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-06-02 02:42:26.700 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 306.4447ms
+2022-06-02 02:42:30.295 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v2/swagger.json - -
+2022-06-02 02:42:30.314 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 19.6118ms
+2022-06-02 02:43:29.787 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/2/Elect - -
+2022-06-02 02:43:31.203 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-06-02 02:43:31.237 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-06-02 02:43:31.248 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/2/Elect - - - 401 - - 1461.1582ms
+2022-06-02 02:45:42.415 +03:00 [INF] Entity Framework Core 5.0.5 initialized 'Electronic_departmentDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-06-02 02:45:42.854 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-06-02 02:45:43.008 +03:00 [INF] User profile is available. Using 'C:\Users\Lemon\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-02 02:45:43.622 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-02 02:45:43.623 +03:00 [INF] Hosting environment: Development
+2022-06-02 02:45:43.623 +03:00 [INF] Content root path: C:\Users\Lemon\source\repos\Electronic_department4\Electronic_department.WebApi
+2022-06-02 02:45:43.718 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/ - -
+2022-06-02 02:45:43.863 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html - -
+2022-06-02 02:45:43.892 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/ - - - 301 - - 182.0938ms
+2022-06-02 02:45:44.443 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html - - - 200 - text/html;charset=utf-8 579.1062ms
+2022-06-02 02:45:44.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui.css - -
+2022-06-02 02:45:44.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui-bundle.js - -
+2022-06-02 02:45:44.514 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui-standalone-preset.js - -
+2022-06-02 02:45:44.548 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-02 02:45:44.548 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-06-02 02:45:44.557 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui.css - - - 200 143410 text/css 46.8407ms
+2022-06-02 02:45:44.576 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-06-02 02:45:44.587 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui-standalone-preset.js - - - 200 336841 application/javascript 73.3349ms
+2022-06-02 02:45:44.626 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-06-02 02:45:44.635 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 8.0426ms
+2022-06-02 02:45:44.677 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui-bundle.js - - - 200 1097461 application/javascript 165.3396ms
+2022-06-02 02:45:44.759 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2022-06-02 02:45:44.875 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 116.6463ms
+2022-06-02 02:45:45.550 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-06-02 02:45:45.870 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 320.2385ms
+2022-06-02 02:46:07.813 +03:00 [INF] Entity Framework Core 5.0.5 initialized 'Electronic_departmentDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-06-02 02:46:08.212 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-06-02 02:46:08.327 +03:00 [INF] User profile is available. Using 'C:\Users\Lemon\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-02 02:46:08.845 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-02 02:46:08.845 +03:00 [INF] Hosting environment: Development
+2022-06-02 02:46:08.846 +03:00 [INF] Content root path: C:\Users\Lemon\source\repos\Electronic_department4\Electronic_department.WebApi
+2022-06-02 02:46:08.907 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/ - -
+2022-06-02 02:46:09.071 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html - -
+2022-06-02 02:46:09.091 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/ - - - 301 - - 187.3539ms
+2022-06-02 02:46:09.533 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html - - - 200 - text/html;charset=utf-8 462.6258ms
+2022-06-02 02:46:09.540 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui.css - -
+2022-06-02 02:46:09.541 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-06-02 02:46:09.546 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2022-06-02 02:46:09.546 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui-standalone-preset.js - -
+2022-06-02 02:46:09.559 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 18.0451ms
+2022-06-02 02:46:09.560 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui-bundle.js - -
+2022-06-02 02:46:09.586 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-02 02:46:09.599 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-06-02 02:46:09.599 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-06-02 02:46:09.617 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui.css - - - 200 143410 text/css 77.6579ms
+2022-06-02 02:46:09.642 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui-standalone-preset.js - - - 200 336841 application/javascript 96.2747ms
+2022-06-02 02:46:09.750 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui-bundle.js - - - 200 1097461 application/javascript 190.2343ms
+2022-06-02 02:46:09.765 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 218.9702ms
+2022-06-02 02:46:10.280 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-06-02 02:46:10.645 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 364.6216ms
+2022-06-02 02:46:28.326 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/1/Elect - -
+2022-06-02 02:46:30.850 +03:00 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'System.String'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: 'System.String'.
+ ---> System.Net.Http.HttpRequestException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. (localhost:44386)
+ ---> System.Net.Sockets.SocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2022-06-02 02:46:31.981 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/1/Elect - - - 500 - application/json 3654.4708ms
+2022-06-02 02:46:57.569 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/v1.0/Elect - -
+2022-06-02 02:46:57.621 +03:00 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'System.String'.
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2022-06-02 02:46:57.857 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/v1.0/Elect - - - 500 - application/json 288.0075ms
+2022-06-02 02:47:04.794 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/1.0/Elect - -
+2022-06-02 02:47:06.875 +03:00 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: 'System.String'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: 'System.String'.
+ ---> System.Net.Http.HttpRequestException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. (localhost:44386)
+ ---> System.Net.Sockets.SocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2022-06-02 02:47:07.026 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/1.0/Elect - - - 500 - application/json 2232.4805ms

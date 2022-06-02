@@ -1,0 +1,65 @@
+2022-05-31 23:08:48.541 +03:00 [INF] Entity Framework Core 5.0.5 initialized 'NotesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 23:08:49.623 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2022-05-31 23:08:49.940 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Notes" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Notes" PRIMARY KEY,
+    "UserId" TEXT NOT NULL,
+    "Title" TEXT NULL,
+    "Details" TEXT NULL,
+    "CreationDate" TEXT NOT NULL,
+    "EditDate" TEXT NULL
+);
+2022-05-31 23:08:49.941 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Notes_Id" ON "Notes" ("Id");
+2022-05-31 23:08:50.227 +03:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-31 23:08:50.420 +03:00 [INF] Creating key {1cd8fa30-3946-4a25-82a8-169f8e6daf47} with creation date 2022-05-31 20:08:50Z, activation date 2022-05-31 20:08:50Z, and expiration date 2022-08-29 20:08:50Z.
+2022-05-31 23:08:50.486 +03:00 [INF] Writing data to file 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys\key-1cd8fa30-3946-4a25-82a8-169f8e6daf47.xml'.
+2022-05-31 23:08:51.279 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-31 23:08:51.279 +03:00 [INF] Hosting environment: Development
+2022-05-31 23:08:51.279 +03:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\Notes-main\Notes-main\Notes.Backend\Notes.WebApi
+2022-05-31 23:08:51.396 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/ - -
+2022-05-31 23:08:51.600 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html - -
+2022-05-31 23:08:51.610 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/ - - - 301 - - 219.0969ms
+2022-05-31 23:08:52.122 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html - - - 200 - text/html;charset=utf-8 522.5646ms
+2022-05-31 23:08:52.127 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui.css - -
+2022-05-31 23:08:52.127 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui-bundle.js - -
+2022-05-31 23:08:52.128 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui-standalone-preset.js - -
+2022-05-31 23:08:52.128 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-31 23:08:52.139 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 10.6019ms
+2022-05-31 23:08:52.169 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-05-31 23:08:52.169 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-05-31 23:08:52.172 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-05-31 23:08:52.173 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui.css - - - 200 143410 text/css 46.7756ms
+2022-05-31 23:08:52.187 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui-standalone-preset.js - - - 200 336841 application/javascript 58.4761ms
+2022-05-31 23:08:52.222 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui-bundle.js - - - 200 1097461 application/javascript 94.6944ms
+2022-05-31 23:08:52.465 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-31 23:08:52.520 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/favicon-32x32.png - -
+2022-05-31 23:08:52.521 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-05-31 23:08:52.521 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/favicon-32x32.png - - - 200 628 image/png 0.9524ms
+2022-05-31 23:08:52.647 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 182.3079ms
+2022-05-31 23:11:02.914 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v2/swagger.json - -
+2022-05-31 23:11:02.922 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 8.1340ms
+2022-05-31 23:14:06.492 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html?urls.primaryName=V2 - -
+2022-05-31 23:14:06.501 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html?urls.primaryName=V2 - - - 200 - text/html;charset=utf-8 9.4100ms
+2022-05-31 23:14:06.539 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-31 23:14:06.541 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 1.2734ms
+2022-05-31 23:14:06.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v2/swagger.json - -
+2022-05-31 23:14:06.867 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 8.6437ms
+2022-05-31 23:14:16.701 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v2/swagger.json - -
+2022-05-31 23:14:16.707 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 5.7289ms
+2022-05-31 23:59:09.824 +03:00 [INF] Entity Framework Core 5.0.5 initialized 'NotesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 23:59:10.003 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-05-31 23:59:10.036 +03:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-31 23:59:10.333 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-31 23:59:10.333 +03:00 [INF] Hosting environment: Development
+2022-05-31 23:59:10.333 +03:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\Notes-main\Notes-main\Notes.Backend\Notes.WebApi
+2022-05-31 23:59:10.361 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html?urls.primaryName=V2 - -
+2022-05-31 23:59:10.646 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html?urls.primaryName=V2 - - - 200 - text/html;charset=utf-8 288.0047ms
+2022-05-31 23:59:10.652 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-05-31 23:59:10.664 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 10.7479ms
+2022-05-31 23:59:11.348 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v2/swagger.json - -
+2022-05-31 23:59:11.514 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 166.2686ms
+2022-05-31 23:59:15.695 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-05-31 23:59:15.706 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.9478ms
